@@ -3,5 +3,10 @@
  * @param cadena consiste en la 
  * @return   
  */
-function decodeResistor(cadena: string){}
+export function decodeResistor(cadena: string): number {
+
+  return 2;
+}
+
+decodeResistor('hola');
 
