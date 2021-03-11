@@ -8,91 +8,17 @@ export function decodeResistor(cadena: string): number {
   let str2 : string = '';
   let valor: number = 0;
   let array = cadena.toLocaleLowerCase().split('-');
+  let number = ['0', '1', '2', '3', '4', '5', '6', '7' ,'8', '9'];
+  let color = ['negro', 'marrón', 'rojo', 'naranja', 'amarilla', 'verde', 'azul', 'violeta', 'gris', 'blanco'];
 
-  switch (array[0]) {
-    case 'negro': {
-      str1 = '0';
-      break;
-    }
-    case 'marrón': {
-      str1 = '1';
-      break;
-    }
-    case 'rojo': {
-      str1 = '2';
-      break;
-    }
-    case 'naranja': {
-      str1 = '3';
-      break;
-    }
-    case 'amarillo': {
-      str1 = '4';
-      break;
-    }
-    case 'verde': {
-      str1 = '5';
-      break;
-    }
-    case 'azul': {
-      str1 = '6';
-      break;
-    }
-    case 'violeta': {
-      str1 = '7';
-      break;
-    }
-    case 'gris': {
-      str1 = '8';
-      break;
-    }
-    case 'blanco': {
-      str1 = '9';
-      break;
-    }
+  for (let i = 0; i < color.length; i++) {
+    if (array[0] == color[i])
+      str1 = number[i];
   }
 
-  switch (array[1]) {
-    case 'negro': {
-      str2 = '0';
-      break;
-    }
-    case 'marrón': {
-      str2 = '1';
-      break;
-    }
-    case 'rojo': {
-      str2 = '2';
-      break;
-    }
-    case 'naranja': {
-      str2= '3';
-      break;
-    }
-    case 'amarillo': {
-      str2 = '4';
-      break;
-    }
-    case 'verde': {
-      str2 = '5';
-      break;
-    }
-    case 'azul': {
-      str2 = '6';
-      break;
-    }
-    case 'violeta': {
-      str2 = '7';
-      break;
-    }
-    case 'gris': {
-      str2 = '8';
-      break;
-    }
-    case 'blanco': {
-      str2 = '9';
-      break;
-    }
+  for (let i = 0; i < color.length; i++) {
+    if (array[1] == color[i])
+      str2 = number[i];
   }
 
   str1 = str1 + str2;
@@ -100,4 +26,3 @@ export function decodeResistor(cadena: string): number {
 
   return valor;
 }
-
