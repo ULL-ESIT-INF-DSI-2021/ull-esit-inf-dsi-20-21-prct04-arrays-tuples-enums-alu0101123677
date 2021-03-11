@@ -101,5 +101,3 @@ export function decodeResistor(cadena: string): number {
   return valor;
 }
 
-console.log(decodeResistor('marrón-negro'));
-
