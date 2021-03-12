@@ -2,6 +2,7 @@ function meshArray(array: string[]): string {
   let str = '';
 
   for(let i = 0; i < array.length - 1; i++) {
+  // comparar el ultimo con el ultimo con el primero
     for (let val1 of array[i]){
       for (let val2 of array[i + 1]) {
         if (val1.search(val2) != -1) {
