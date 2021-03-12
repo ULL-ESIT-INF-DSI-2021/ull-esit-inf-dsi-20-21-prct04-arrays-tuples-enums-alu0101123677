@@ -1,4 +1,4 @@
-function meanAndConcatenate(array: string[]): string[] {
+export function meanAndConcatenate(array: string[]): string[] {
   let str: string = '0123456789'
   let str2 : string = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ'
   let number: number = 0;
