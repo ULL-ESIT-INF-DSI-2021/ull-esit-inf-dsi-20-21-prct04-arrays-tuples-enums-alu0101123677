@@ -20,8 +20,7 @@ function meanAndConcatenate(array: string[]): string[] {
   array2[0] = String(number);
   array2[1] = aux;
 
-  console.log(array2[0]);
-  console.log(array2[1]);
+  console.log(array2);
 
   return array2;
 }
