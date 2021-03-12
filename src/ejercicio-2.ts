@@ -1,18 +1,18 @@
 function meshArray(array: string[]): string {
   let str = '';
-
+  let str2 = '';
+  
   for(let i = 0; i < array.length - 1; i++) {
-  // comparar el ultimo con el ultimo con el primero
-    for (let val1 of array[i]){
-      for (let val2 of array[i + 1]) {
-        if (val1.search(val2) != -1) {
-          str = str + val2;
-        }
+    for (let j = 0; j < array[i].length; j++) {
+      str = array[i].slice(j, array[i].length);
+      if (array[i + 1].search(str) != -1) {
+        str2 = str2 + str;
+        break
       }
     }
   }
 
-  console.log(str);
+  console.log(str2)
 
   return '';
 }
