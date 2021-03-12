@@ -1,4 +1,4 @@
-function meshArray(array: string[]): string {
+export function meshArray(array: string[]): string {
   let str = '';
   let str2 = '';
   
