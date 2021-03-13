@@ -1,7 +1,6 @@
 import 'mocha';
 import {expect} from 'chai';
 import {multiplyAll} from '../src/ejercicio-5';
-import {multiply} from '../src/ejercicio-5';
 
 describe('Función que multiplica cada elemento de un array por un atributo de tipo number', () => {
   it('([2, 6, 8])(3)) returns value [6, 18, 24]', () => {
