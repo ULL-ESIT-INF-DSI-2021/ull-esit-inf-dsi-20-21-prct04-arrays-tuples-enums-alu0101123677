@@ -18,8 +18,5 @@ export function moveZeros(array: number[]): number[] {
 
  let result = array1.concat(array2);
 
- console.log(result)
  return result;    
 }
-
-moveZeros([1,0,1,2,0,1,3])

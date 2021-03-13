@@ -64,8 +64,3 @@ export function nPointDistance(point: Npoint, point2: Npoint): number {
   
   return result;
 }
-
-console.log(nPointAdd([2, 3, 3, 5, 8, 8], [3, 4, 4, 7, 5, 5]));
-console.log(nPointDiference([2, 3, 4, 6], [3, 4, 4, 6]));
-console.log(nPointProduct([2, 3, 4, 5, 7], 3));
-console.log(nPointDistance([2, 3, 6], [3, 4, 5]));

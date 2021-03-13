@@ -25,9 +25,5 @@ export function meanAndConcatenate(array: string[]): string[] {
   array2[0] = String(number);
   array2[1] = aux;
 
-  console.log(array2);
-
   return array2;
 }
-  
-meanAndConcatenate(['u', '6', 'd', '1', 'i', 'w', '6', 's', 't', '4', 'a', '6', 'g', '1', '2', 'w', '8', 'o', '2', '0']);

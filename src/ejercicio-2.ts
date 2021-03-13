@@ -18,9 +18,5 @@ export function meshArray(array: string[]): string {
     }
   }
 
-  console.log(str2)
-
   return str2;
 }
-
-meshArray(['allow', 'lowering', 'ringmaster', 'terror']);

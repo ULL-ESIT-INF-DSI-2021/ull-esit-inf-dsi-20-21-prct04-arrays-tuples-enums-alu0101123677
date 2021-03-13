@@ -20,6 +20,3 @@ export function multiplyAll(array: number[]): Function {
 
   return multiply
 }
-
-
-multiplyAll([2, 6, 8])(3);

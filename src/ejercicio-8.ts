@@ -49,8 +49,3 @@ export function agent(X: number, Y: number, initialPoint: Point, endPoint: Point
   move.pop();
   return move;
 }
-
-
-let initialPoint: Point = [2, 2];
-let endPoint: Point = [5, 3];
-console.log(agent(30, 50, initialPoint, endPoint));
