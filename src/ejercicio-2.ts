@@ -1,3 +1,9 @@
+/**
+ * Función que detecta si hay palabras concatenadas
+ * @param array recibe un array de string con diversas palabras 
+ * @returns retorna un string vacio o con las partes encadenadas del array
+ */
+
 export function meshArray(array: string[]): string {
   let str = '';
   let str2 = '';

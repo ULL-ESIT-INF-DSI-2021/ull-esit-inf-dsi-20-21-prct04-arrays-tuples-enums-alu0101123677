@@ -1,3 +1,8 @@
+/**
+ * Función que hace la media entre los números del vector y concatena todas las letras
+ * @param array es un array de string rellenado con números y letras
+ * @returns retorna un vector de string con la solución
+ */
 export function meanAndConcatenate(array: string[]): string[] {
   let str: string = '0123456789'
   let str2 : string = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ'

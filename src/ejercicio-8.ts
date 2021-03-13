@@ -1,6 +1,14 @@
 type Point = [number, number];
 
-export function agent(X: number, Y: number, initialPoint: Point, endPoint: Point ) {
+/**
+ * Función que calcula los movimientos que se tienen que hacer desde la posición inicial a la final
+ * @param X Variable tipo number que guarda el número de filas del tablero
+ * @param Y Varaible tipo number que guarda el número de columnas del tablero
+ * @param initialPoint Variable creada tipo Point que guarda las coordenadas de la posición inicial
+ * @param endPoint Variable creada tipo Point que guarda las coordenadas de la posición final
+ * @returns retorna un array de string con los movimientos necesarios
+ */
+export function agent(X: number, Y: number, initialPoint: Point, endPoint: Point ): string[] {
   let result: Point = [0, 0];
   let str: string = '';
   let cardinales: string[] = ['North', 'South', 'East', 'West'];

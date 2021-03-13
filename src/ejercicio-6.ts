@@ -1,5 +1,11 @@
 type Point = [number, number];
 
+/**
+ * Función que suma dos puntos bidimensionales coordenada a coordenada
+ * @param point es un tipo creado Point que define las coordenadas de un punto bidimensional
+ * @param point2 es un tipo creado Point que define las coordenadas de un punto bidimensional
+ * @returns retorna un tipo creado Point 
+ */
 export function pointAdd(point: Point, point2: Point): Point {
   let result: Point = [0, 0];
 
@@ -9,6 +15,12 @@ export function pointAdd(point: Point, point2: Point): Point {
   return result;
 }
 
+/**
+ * Función que resta dos puntos bidimensionales coordenada a coordenada
+ * @param point es un tipo creado Point que define las coordenadas de un punto bidimensional
+ * @param point2 es un tipo creado Point que define las coordenadas de un punto bidimensional
+ * @returns retorna un tipo creado Point 
+ */
 export function pointDiference(point: Point, point2: Point): Point {
   let result: Point = [0, 0];
   
@@ -18,6 +30,12 @@ export function pointDiference(point: Point, point2: Point): Point {
   return result;
 }
 
+/**
+ * Función que calcula el producto de un punto bidimensional por un número
+ * @param point es un tipo creado Point que define las coordenadas de un punto bidimensional
+ * @param valor es una variable tipo number que contiene el multiplicando
+ * @returns retorna un tipo creado Point 
+ */
 export function pointProduct(point: Point, valor: number): Point {
   let result: Point = [0, 0];
 
@@ -27,6 +45,12 @@ export function pointProduct(point: Point, valor: number): Point {
   return result;
 }
 
+/**
+ * Función que calcula la distancia euclidia entre dos puntos
+ * @param point es un tipo creado Point que define las coordenadas de un punto bidimensional
+ * @param point2 es un tipo creado Point que define las coordenadas de un punto bidimensional
+ * @returns retorna un tipo number con la distnacia euclidia calculada
+ */
 export function pointDistance(point: Point, point2: Point): number {
   let result: number;
   

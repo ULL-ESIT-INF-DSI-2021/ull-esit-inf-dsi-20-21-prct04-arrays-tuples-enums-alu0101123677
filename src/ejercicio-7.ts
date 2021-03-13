@@ -1,5 +1,11 @@
 type Npoint = [number, number, number, ...number[]];
 
+/**
+ * Función que suma dos puntos n-dimensionales coordenada a coordenada
+ * @param point es un tipo creado Npoint que define las coordenadas de un punto n-dimensional
+ * @param point2 es un tipo creado Npoint que define las coordenadas de un punto n-dimensional
+ * @returns retorna un tipo creado Npoint 
+ */
 export function nPointAdd(point: Npoint, point2: Npoint): Npoint {
   if (point.length != point2.length)
     throw 'Los puntos no son de la misma dimensión';
@@ -10,6 +16,12 @@ export function nPointAdd(point: Npoint, point2: Npoint): Npoint {
   return point;
 }
 
+/**
+ * Función que resta dos puntos n-dimensionales coordenada a coordenada
+ * @param point es un tipo creado Npoint que define las coordenadas de un punto n-dimensional
+ * @param point2 es un tipo creado Npoint que define las coordenadas de un punto n-dimensional
+ * @returns retorna un tipo creado Npoint 
+ */
 export function nPointDiference(point: Npoint, point2: Npoint): Npoint {
   if (point.length != point2.length)
     throw 'Los puntos no son de la misma dimensión';
@@ -20,6 +32,12 @@ export function nPointDiference(point: Npoint, point2: Npoint): Npoint {
   return point;
 }
 
+/**
+ * Función que calcula el producto de un punto n-dimensional por un número
+ * @param point es un tipo creado Npoint que define las coordenadas de un punto n-dimensional
+ * @param valor es una variable tipo number que contiene el multiplicando
+ * @returns retorna un tipo creado Npoint 
+ */
 export function nPointProduct(point: Npoint, valor: number): Npoint {
 
   for (let i = 0; i < point.length; i++) 
@@ -28,6 +46,12 @@ export function nPointProduct(point: Npoint, valor: number): Npoint {
   return point;
 }
 
+/**
+ * Función que calcula la distancia euclidia entre dos puntos
+ * @param point es un tipo creado Point que define las coordenadas de un punto n-dimensional
+ * @param point2 es un tipo creado Point que define las coordenadas de un punto n-dimensional
+ * @returns retorna un tipo number con la distnacia euclidia calculada
+ */
 export function nPointDistance(point: Npoint, point2: Npoint): number {
   let result: number = 0;
   if (point.length != point2.length)

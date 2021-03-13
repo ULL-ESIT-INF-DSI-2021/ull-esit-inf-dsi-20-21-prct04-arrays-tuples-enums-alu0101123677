@@ -1,6 +1,6 @@
 /**
  * funcion que calcula el valor una resistencia segun sus colores
- * @param cadena consiste en los nombres de los colores de la resistencia 
+ * @param cadena string con los colores de la resistencia 
  * @return un number con el valor de la resistencia   
  */
 export function decodeResistor(cadena: string): number {
