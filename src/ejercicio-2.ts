@@ -32,5 +32,3 @@ export function meshArray(array: string[]): string {
   }
   return str;
 }
-
-console.log(meshArray(['allow', 'lowering', 'ringmaster', 'terror']));
